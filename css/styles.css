@@ -8,3 +8,45 @@ html {
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.calc-box {
+    border: 2px black solid;
+
+    width: 250px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
+
+.result-box {
+    border: 2px black solid;
+
+    margin: 5px 2px;
+    padding: 1px 5px;
+}
+
+.numpad-box {
+    border: 2px black solid;
+
+    margin: 10px 2px;
+    padding: 10px;
+
+    display: flex;
+    gap: 2px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.numpad-box button {
+    width: calc(100%/4);
+    margin: 5px;
+}

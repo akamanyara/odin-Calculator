@@ -41,3 +41,4 @@ function operate(number1, number2, operator) {
 
     return result;
 }
+
