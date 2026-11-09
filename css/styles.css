@@ -13,40 +13,66 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+
+    background-color: #ffcccc;
 }
 
 .calc-box {
-    border: 2px black solid;
+    border: 8px solid;
+    border-radius: 8px;
+    background-color: #ff33cc ;
 
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
 
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    justify-content: center;
 }
 
 .result-box {
+    border-radius: 8px;
     border: 2px black solid;
+    background-color: #ff99cc;
 
-    margin: 5px 2px;
+    flex: 0 0 70px;
+
+    margin: 10px 2px;
     padding: 1px 5px;
+
+    text-align: center;
+    font-size: 50px;
+}
+
+.clear-box button {
+    text-align: center;
+
+    padding: 2px;
+    margin: 0px 2px;
+
+    background-color: #ff99cc;
+    border-radius: 8px;
+    border-color: #ff33cc;
 }
 
 .numpad-box {
-    border: 2px black solid;
+    background-color: #ff99cc;
+    border-radius: 8px;
 
     margin: 10px 2px;
-    padding: 10px;
+    padding: 3px;
 
     display: flex;
     gap: 2px;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .numpad-box button {
-    width: calc(100%/4);
-    margin: 5px;
+    flex: 1 1 calc(100%/4);
+    height: 48px;
+
+    background-color: #ff99cc;
+    border-color: #ff33cc;
+    border-radius: 8px;
 }
